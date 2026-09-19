@@ -1,0 +1,29 @@
+GET http://localhost:5087/books
+
+###
+GET http://localhost:5087/books/2
+
+###
+POST http://localhost:5087/books
+Content-Type: application/json
+
+{
+    "name":"Ego is the Enemy",
+    "author":"xyz",
+    "genre":"self help",
+    "price":400
+}
+
+###
+PUT http://localhost:5087/books/2
+Content-Type: application/json
+
+{
+    "name": "Let us C",
+    "author": "Linus",
+    "genre": "Programming",
+    "price": 550
+}
+
+###
+DELETE http://localhost:5087/books/2
